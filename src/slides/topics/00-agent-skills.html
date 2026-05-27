@@ -1,0 +1,74 @@
+<section>
+  <section balance data-topic="skills" data-menu-title="What are Agent Skills?">
+    <h3>What are <mark>Agent Skills</mark>?</h3>
+    <small>Lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows.</small>
+    <small>Based on <mark>agentskills.io</mark>: open standard, portable skills, on demand loading.</small>
+  </section>
+
+  <section balance data-topic="skills" data-menu-title="Skills: procedures, not snippets">
+    <h3>Skills = <mark>procedures</mark>, not snippets</h3>
+    <small>Do not rely only on model memory or current chat state.</small>
+  </section>
+
+  <section data-topic="skills" data-menu-title="Skill folder anatomy">
+    <h4>Skill <mark>folder</mark> anatomy</h4>
+    <small balance>Core idea: a folder with a <mark>SKILL.md</mark> file. The file defines metadata and instructions, then can carry support files.</small>
+    <small>
+      <ul>
+        <li class="fragment"><mark>SKILL.md</mark>: required name, description, instructions</li>
+        <li class="fragment"><mark>scripts/</mark>: optional executable code</li>
+        <li class="fragment"><mark>references/</mark>: optional docs and playbooks</li>
+        <li class="fragment"><mark>assets/</mark>: optional templates and resources</li>
+      </ul>
+    </small>
+  </section>
+
+  <section data-topic="skills" data-menu-title="How skills work">
+    <h4>How skills <mark>work</mark></h4>
+    <small>
+      <ol>
+        <li class="fragment"><mark>Discovery</mark>: agent loads only name and description first</li>
+        <li class="fragment"><mark>Activation</mark>: matching task loads full <code>SKILL.md</code> into context</li>
+        <li class="fragment"><mark>Execution</mark>: agent follows instructions, optional code, optional files</li>
+      </ol>
+    </small>
+  </section>
+
+  <section data-topic="skills" data-menu-title="Why skills matter">
+    <h4>So what's a <mark>skill</mark>?</h4>
+    <small>
+      <blockquote>
+        A good skill says when to load, how to work, what to avoid, and how to verify.
+        <br /><br />
+        A bad skill is a black box that may or may not work, and you have no way to verify or fix it.
+      </blockquote>
+    </small>
+  </section>
+
+  <section balance data-topic="skills" data-menu-title="Why skills matter">
+    <h4>Why <mark>skills</mark> matter?</h4>
+    <comparison>
+      <left>
+        <h4>Reduces variance</h4>
+        <small>
+          <ul>
+            <li class="fragment">Do not depend on model memory only</li>
+            <li class="fragment">Do not depend on current chat state only</li>
+            <li class="fragment">Procedure stays repeatable and auditable</li>
+          </ul>
+        </small>
+      </left>
+      <right>
+        <h4>Increases portability</h4>
+        <small>
+          <ul>
+            <li class="fragment">Same procedure works across projects</li>
+            <li class="fragment">Domain expertise encoded once, reused many times</li>
+            <li class="fragment">Open and portable, not black box behavior</li>
+          </ul>
+        </small>
+      </right>
+    </comparison>
+    <aside class="notes">Point to the three stage model: discovery, activation, execution. Tie it to versioned folders and portable procedures.</aside>
+  </section>
+</section>
